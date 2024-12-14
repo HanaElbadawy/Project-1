@@ -1,0 +1,787 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 4000px;
+}
+/* ----------------------------------------------------header----------------------------------------------------------------- */
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+    position:fixed;
+    top: 0;
+    opacity: 0.7;
+    z-index: 50;
+}
+.home{
+    color: rgb(172, 164, 164);
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 15px;
+    float: left;
+}
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.search-icon{
+    color: rgb(172, 164, 164);
+    font-size: 20px;
+    margin: 15px;
+    margin-left: 55px;
+    position: absolute;
+}
+.header-list{
+    margin-right:  20px;
+    margin-top: 20px;
+    float: right;
+    list-style: none;
+}
+.header-list li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.header-list li a{
+    text-decoration: none;
+    color: grey;
+    position: relative;
+
+}
+
+
+.header-list li a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.header-list li a:hover:after {
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* ----------------------------------------------------sec1----------------------------------------------------------------- */
+.sec1{
+    width: 100%;
+    height:  100vh ;
+    background-image: url(../images/dreamy-aesthetic-cosmetic-product-with-fresh-background.jpg);
+    position: relative;
+}
+.sec1-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:  rgba(0, 0, 0 , 0.5) ;
+}
+.sec1-body{
+    width: 80%;
+     color:rgb(197, 233, 198);
+     position: absolute;
+     top :50% ;
+     left: 50%;
+     transform: translate( -50%  , -50% );
+     text-align: center;
+
+}
+.sec1-body p{
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.sec1-body h1{
+    font-size: 70px;
+}
+
+.sec1-body h1,p{
+    background-color: rgba(5, 5, 5, 0.3);
+}
+.sec1-btn1 , .sec1-btn2{
+    width: 150px;
+    height: 50px;
+    border: 0px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.sec1-btn1{
+    background-color: rgb(143, 195, 133);
+    color: antiquewhite;
+}
+
+.sec1-btn2{
+    background-color:  antiquewhite;
+    color:  rgb(143, 195, 133) ;
+}
+.sec1-btn1:hover , .sec1-btn2:hover {
+    opacity: 0.7;
+}
+
+/* ----------------------------------------------------sec2----------------------------------------------------------------- */
+
+
+.sec2 , .sec3 {
+    height: 100vh;
+}
+.title  {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    color:  rgb(124, 168, 115);
+    position: relative;
+}
+.line-title {
+    width: 250px;
+    height:3px;
+    background-color: rgb(49, 47, 47);
+    margin: auto;
+}
+.sec2-div{
+    width: 400px;
+    height:400px;
+    background-color: rgb(143, 195, 133);
+    float: left;
+    margin-left: 80px;
+    margin-top: 30px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 20px;
+    position: relative;
+}
+.sec2-icon{
+    font-size: 100px;
+    color: rgb(210, 255, 192);
+}
+.sec2-div p {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 25px;
+    line-height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: rgb(25, 25, 25);
+}
+.sec2-div h1{
+    font-size: 50px;
+    padding-top: 20px;
+    color: rgb(49, 47, 47);
+}
+.view-products{
+    position: relative;
+    height: 40px;
+    width: 200px;
+    opacity: 0.5;
+    border: 0;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    z-index: 2;
+    
+}
+.view-products a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    
+}
+
+
+.sec2-div:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(79, 108, 73);
+    opacity: 0;
+    z-index: 1;
+}
+.sec2-div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+
+}
+
+.sec2-div:hover .view-products{
+    background-color: rgb(176, 243, 195);
+    border: 2px solid black;
+}
+.sec2-div:hover p{
+    color: #fff;
+}
+.sec2-div:hover h1{
+    color: #fff;
+}
+.sec2-div:hover .sec2-icon{
+    color: #fff;
+}
+
+/*------------------------------------------sec3--------------------------------------------------------*/
+
+.sec3{
+    background-color: aliceblue;
+    position: relative;
+
+}
+.sec3-div1{
+    float: left;
+    margin-left: 180px;
+    margin-top: 50px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.sec3-layer1{
+    width: 100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .1s;
+    text-align: center;
+    visibility: hidden;
+}
+.sec3-div1:hover .sec3-layer1{
+    visibility: visible;
+}
+
+.hover-sec3-title{
+    font-size: 50px;
+    color: aliceblue;
+    padding-top: 50px;
+}
+
+.skin-sec3-p{
+    font-size: 30px;
+    width: 150px;
+    margin: auto;
+    color: aliceblue;
+    background-color: rgba(255, 255, 255, 0);
+}
+.heart{
+    font-size: 25px;
+    color: red;
+}
+.fav{
+    font-size: 25px ;
+    color: yellow;
+}
+
+/* -------------------------------------------sec4---------------------------------------------- */
+
+
+
+.sec4 {
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+}
+
+.sec4-div1{
+    width: 350px;
+    height: 250px;
+    background-color: rgb(240, 250, 198) ;
+    text-align: left;
+    float: left;
+    margin: 20px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border: 2px solid  rgb(143, 195, 133);
+    border-radius: 10px;
+    position: relative;
+}
+
+.sec4-div1:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 2s;
+    background-color: rgb(147, 155, 117);
+    border-radius: 10px;
+}
+.sec4-div1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+} 
+.sec4icon{
+    font-size: 30px;
+    color: rgb(143, 195, 133);
+    float: left;
+    padding:20px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.sec4-div1 h3{
+    font-size: 30px;
+    color: rgb(128, 175, 119);
+}
+.sec4-div1 span{
+    font-style: italic;
+    line-height: 20px;
+    color: rgb(64, 62, 62);
+}
+.sec4-divs{
+    width: 100%;
+    height: 100%;
+}
+.sec4-div1:hover .sec4icon{
+    color: rgb(88, 118, 82)
+}
+
+.sec4-div1:hover h3{
+    color: rgb(51, 99, 42)
+}
+.sec4-div1:hover span{
+    color: rgb(106, 139, 100)
+}
+
+/* ----------------------------------------------------sec5------------------------------------------------------------ */
+
+.sec5{
+    width: 80%;
+    margin-left: 80px;
+    height: 100vh;
+    position: relative;
+    padding-top: 50px;
+}
+
+.title-sec5{
+    padding-top: 40px;
+    color:  rgb(124, 168, 115);
+
+}
+
+.line-title-sec5{
+    width: 100px;
+    height:2px;
+    background-color: rgb(13, 12, 12);
+    margin-bottom: 40px;
+}
+
+.sec5-body{
+    width: 60%;
+}
+.sec5-body h3{
+    color: rgb(78, 120, 77);
+    font-size: larger;
+    line-height: 30px;
+}
+.sec5-body span{
+    font-size: 20px;
+    line-height: 50px;
+    color: rgb(98, 131, 109);
+    font-weight: bold;
+
+}
+.check{
+    font-size: 25px;
+    color: white;
+    background-color: rgb(50, 209, 22);
+}
+.sec5-image{
+    position: absolute; 
+    right: 0;
+    top: 100px;
+    
+}
+.sec5-pages{
+    font-size: 50px;
+
+}
+.sec5-list{
+float: right;
+margin-top: 100px;
+margin-right: 50px;
+}
+.sec5-pages li{
+    display: inline-block;
+background-color: rgb(175, 163, 163);
+width: 30px;
+height: 30px;
+border: 0;
+border-radius: 50%;
+}
+.default li{
+background-color: rgb(127, 182, 125);
+
+}
+.sec5-pages li:hover{
+    background-color: rgb(127, 182, 125);
+}
+
+
+.sec5 img{
+    height: 450px;
+    width: 250px;
+
+}
+
+/* -----------------------------------------------------sec6------------------------------------------------------- */
+.sec6 , .sec8{
+    height: 100vh;
+    position: relative;
+    width: 100%;   
+}
+
+.sec6-image{
+    width: 100%;
+    height: 50%;
+    background-image: url(../images/hair2.jpg) ;
+    background-attachment: fixed;
+    position: absolute;
+    top: 25%;
+    position: relative;
+}
+
+.sec6-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-color: black;
+    top: 0;
+    left: 0;
+}
+.icons-sec6{
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.icon-sec6{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-left: 120px;
+    margin-top: 150px;
+}
+
+/* --------------------------------------------------sec7------------------------------------------------------- */
+
+
+.sec7{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+
+}
+.sec7-div1{
+    float: left;
+    width: 350px;
+    height: 350px;
+    border: 2px solid  rgb(143, 195, 133);
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+.sec7-div1:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: 2s;
+    border-radius: 10px;
+}
+.sec7-div1:hover::after{
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+.sec7-div1 h2{
+    padding-bottom: 15px;
+}
+.price-sec7{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding-top: 20px;
+    margin-left: 125px;
+}
+.price-sec7 h3{
+    font-size: 40px;
+    line-height: 30px;
+}
+.purchase-sec7{
+    position: relative;
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(73, 142, 73);
+    border-radius: 15px;
+    z-index: 2;
+
+}
+.purchase-sec7 a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+.sec7-div1 p{
+    background-color: white;
+    line-height: 40px;
+    font-weight: bold;
+}
+.sec7-div1:hover p{
+    color: rgb(73, 142, 73);
+}
+.sec7-div1:hover .price-sec7{
+    border: 2px solid rgb(73, 142, 73);
+
+}
+.sec7-div1:hover h2{
+    color: rgb(73, 142, 73);
+
+}
+
+/* --------------------------------------sec8-------------------------------------------------------------- */
+.sec8{
+    height: 100vh;
+}
+
+.sec8-image{
+width: 100%;
+height: 60%;
+background-image: url(../images/skin2.jpg) ;
+background-attachment: fixed;
+position: absolute;
+opacity: 0.7;
+position: relative;
+
+}
+
+.sec8-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+.img-sec8 , .img2-sec8{
+    width: 100px;
+    height: 100px;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+}
+
+.persons-sec8{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    font-size: 25px;
+}
+.persons-sec8 h3{
+    color: rgb(47, 42, 42);
+}
+.persons-sec8 h4{
+    color: rgb(83, 79, 79);
+}
+
+
+.person1-sec8 , .person2-sec8{
+    width: 600px;
+    height: 200px;
+    float: left;
+    position: relative;
+    left: 10%;
+
+
+}
+
+.sec8-body{
+    position: absolute;
+    top: 15px;
+    left: 120px;
+    text-align: left;
+
+}
+.person2-sec8   {
+    margin-left: 100px;
+}
+
+.person1-sec8 span, .person2-sec8 span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    color: rgb(60, 58, 58);
+}
+
+/* -------------------------------------------------------sec9--------------------------------------------------------------------- */
+.sec9-image{
+    position: relative;
+}
+.sec9-image h2{
+    padding-top: 20px;
+}
+.sec9-div p{
+    text-transform: uppercase;
+}
+.sec9-icons{
+    position: absolute;
+    top: 0;
+    margin-left:  70px;;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+}
+.sec9-div:hover .sec9-icons{
+    visibility: visible;
+}
+.sec9-div:hover h2{
+    color: rgb(134, 129, 129);
+}
+.sec9-div:hover p{
+    color: rgb(130, 137, 135);
+
+}
+.sec9-div{
+    position: relative;
+}
+.sec9-div:after {   
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    transition: 2s;
+    background-color: black;
+
+}
+
+.sec9-div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.sec9-icons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    color: #fff;
+    font-size: 23px ;
+    margin-left: auto ;
+}
+.sec9-icons  a  i {
+    line-height: 40px ;
+}
+
+
+/* -------------------------------------------------------sec10--------------------------------------------- */
+
+
+.sec10-div{
+    height: 500px;
+    width: 400px;
+    margin-left: 20px;
+}
+.sec10-div1{
+    margin-left: 100px;
+}
+.sec10-div a{
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+.sec10-div p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 20px;
+}
+.sec10-div span{
+    line-height: 50px;
+}
+
+/* ----------------------------------------------------sec11------------------------------------------------------ */
+.sec11{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(217, 219, 219);
+position: relative;
+}
+.img-sec11{
+position: absolute;
+top: 10px;
+left: 40%;
+}
+.sec11-image{
+    border-radius: 20px;
+}
+.body-sec11{
+    position: absolute;
+    top: 200px;
+left: 39%;
+}
+.body-sec11 li{
+    font-size: 30px;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 9px;
+    color: white;
+    background-color: rgb(44, 93, 173);
+    display: inline-block;
+
+}
+
+
+.footer{
+    position: absolute;
+    top: 265px;
+    left: 39%;
+}
+
+.body-sec11 a{
+    text-decoration: none;
+    color: white;
+
+}
+.body-sec11 li:hover {
+   background-color: blue;
+}
+
